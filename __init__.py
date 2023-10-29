@@ -1,9 +1,9 @@
-from operations import power
+from operations import modulo_divide
 def game():
     score = 0
     while True:
         print('======== Menu ========'
-              '\n1. Power'
+              '\n1. Module'
               '\n0. Exit')
         option = int(input('\nChoose an option: '))
         if option == 0:
@@ -12,7 +12,7 @@ def game():
         num_2 = input('Enter second number: ')
         answer = int(input('Enter your answer: '))
         if option == 1:
-            result = power(num_1, num_2)
+            result = modulo_divide(num_1, num_2)
             if result == answer:
                 score += 4
                 print('Correct!!')
